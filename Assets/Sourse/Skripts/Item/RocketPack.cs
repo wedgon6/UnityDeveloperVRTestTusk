@@ -1,9 +1,12 @@
-public class RocketPack : Item
+namespace Assets.Scripts.Items
 {
-    private int _charges;
-
-    public RocketPack(string name, int charges) : base(name)
+    public class RocketPack : Item
     {
-        _charges = charges;
+        private int _charges;
+
+        public RocketPack(string name, int charges) : base(name)
+        {
+            _charges = charges;
+        }
     }
 }

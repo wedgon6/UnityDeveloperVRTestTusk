@@ -1,11 +1,14 @@
-public abstract class Item
+namespace Assets.Scripts.Items
 {
-    private string _name;
-
-    public Item(string name)
+    public abstract class Item
     {
-        _name = name;
-    }
+        private string _name;
 
-    public string Name => _name;
+        public Item(string name)
+        {
+            _name = name;
+        }
+
+        public string Name => _name;
+    }
 }

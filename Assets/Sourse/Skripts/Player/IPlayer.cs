@@ -1,14 +1,19 @@
-public interface IPlayer
-{
-    public int Health { get; }
-    public int Lives { get; }
-    public string Nickname { get; }
-    public Equipment Equipment { get; }
-    public string[] Skills { get; }
+using Assets.Scripts.Items;
 
-    public void Initialize(
-        int health,
-        int levels,
-        string nickname,
-        string[] skills);
+namespace Assets.Scripts.PlayerScripts
+{
+    public interface IPlayer
+    {
+        public int Health { get; }
+        public int Lives { get; }
+        public string Nickname { get; }
+        public Equipment Equipment { get; }
+        public string[] Skills { get; }
+
+        public void Initialize(
+            int health,
+            int levels,
+            string nickname,
+            string[] skills);
+    }
 }

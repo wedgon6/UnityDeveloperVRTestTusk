@@ -1,7 +1,10 @@
 using System.Collections.Generic;
 
-public interface IEquipment
+namespace Assets.Scripts.Items
 {
-    public IReadOnlyList<Item> Items { get; }
-    public void AddItem(Item item);
+    public interface IEquipment
+    {
+        public IReadOnlyList<Item> Items { get; }
+        public void AddItem(Item item);
+    }
 }

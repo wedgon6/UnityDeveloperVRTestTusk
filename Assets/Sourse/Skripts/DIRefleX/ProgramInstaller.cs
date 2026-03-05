@@ -1,16 +1,21 @@
+using Assets.Scripts.Items;
+using Assets.Scripts.PlayerScripts;
 using Reflex.Core;
 using UnityEngine;
 
-public class ProgramInstaller : MonoBehaviour, IInstaller
+namespace Assets.Scripts.DIReflex
 {
-    private IPlayer _player;
-    private IWeaponFactory _weaponFactory;
-
-    public void InstallBindings(ContainerBuilder containerBuilder)
+    public class ProgramInstaller : MonoBehaviour, IInstaller
     {
-        //_player = new Player();
-        _weaponFactory = new WeaponFactory();
-        //containerBuilder.AddSingleton(_player, typeof(IPlayer));
-        containerBuilder.AddSingleton(_weaponFactory, typeof(IWeaponFactory));
+        private IPlayer _player;
+        private IWeaponFactory _weaponFactory;
+
+        public void InstallBindings(ContainerBuilder containerBuilder)
+        {
+            _player = new Player();
+            _weaponFactory = new WeaponFactory();
+            containerBuilder.AddSingleton(_player, typeof(IPlayer));
+            containerBuilder.AddSingleton(_weaponFactory, typeof(IWeaponFactory));
+        }
     }
 }

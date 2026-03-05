@@ -1,9 +1,12 @@
-public class Weapon : Item
+namespace Assets.Scripts.Items
 {
-    private int _ammo;
-
-    public Weapon(string name, int ammo) : base(name)
+    public class Weapon : Item
     {
-        _ammo = ammo;
+        private int _ammo;
+
+        public Weapon(string name, int ammo) : base(name)
+        {
+            _ammo = ammo;
+        }
     }
 }

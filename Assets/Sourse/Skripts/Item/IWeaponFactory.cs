@@ -1,5 +1,8 @@
-public interface IWeaponFactory
+namespace Assets.Scripts.Items
 {
-    public Weapon CreatePistol();
-    public Weapon CreateAnyWeapon(string name, int ammo);
+    public interface IWeaponFactory
+    {
+        public Weapon CreatePistol();
+        public Weapon CreateAnyWeapon(string name, int ammo);
+    }
 }

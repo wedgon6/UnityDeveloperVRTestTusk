@@ -1,15 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Equipment : IEquipment
+namespace Assets.Scripts.Items
 {
-    private List<Item> _items = new();
-
-    public IReadOnlyList<Item> Items => _items;
-
-    public void AddItem(Item item)
+    public class Equipment : IEquipment
     {
-        _items.Add(item);
-        Debug.Log($"Кол-во предметов{_items.Count}. Добавен {item.Name}");
+        private List<Item> _items = new();
+
+        public IReadOnlyList<Item> Items => _items;
+
+        public void AddItem(Item item)
+        {
+            _items.Add(item);
+            Debug.Log($"Кол-во предметов{_items.Count}. Добавен {item.Name}");
+        }
     }
 }

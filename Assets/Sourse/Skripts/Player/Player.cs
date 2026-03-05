@@ -1,29 +1,30 @@
-using UnityEngine;
+using Assets.Scripts.Items;
 
-public class Player : IPlayer
+namespace Assets.Scripts.PlayerScripts
 {
-    public int Health { get; private set; }
-    public int Lives { get; private set; }
-    public string Nickname { get; private set; }
-    public string[] Skills { get; private set; }
-    public Equipment Equipment { get; private set; } = new Equipment();
-
-    public Player()
+    public class Player : IPlayer
     {
-        // Equipment = new();
-        Debug.Log("NEW PLAYER");
-    }
+        public int Health { get; private set; }
+        public int Lives { get; private set; }
+        public string Nickname { get; private set; }
+        public string[] Skills { get; private set; }
+        public Equipment Equipment { get; private set; } = new Equipment();
 
-    public void Initialize(
-        int health,
-        int levels,
-        string nickname,
-        string[] skills)
-    {
-        Health = health;
-        Lives = levels;
-        Nickname = nickname;
-        Skills = skills;
-        Equipment = new();
+        public Player()
+        {
+        }
+
+        public void Initialize(
+            int health,
+            int levels,
+            string nickname,
+            string[] skills)
+        {
+            Health = health;
+            Lives = levels;
+            Nickname = nickname;
+            Skills = skills;
+            Equipment = new();
+        }
     }
 }

@@ -1,12 +1,15 @@
-public class WeaponFactory : IWeaponFactory
+namespace Assets.Scripts.Items
 {
-    public Weapon CreateAnyWeapon(string name, int ammo)
+    public class WeaponFactory : IWeaponFactory
     {
-        return new Weapon(name, ammo);
-    }
+        public Weapon CreateAnyWeapon(string name, int ammo)
+        {
+            return new Weapon(name, ammo);
+        }
 
-    public Weapon CreatePistol()
-    {
-        return new Weapon("Pistol", 10);
+        public Weapon CreatePistol()
+        {
+            return new Weapon("Pistol", 10);
+        }
     }
 }

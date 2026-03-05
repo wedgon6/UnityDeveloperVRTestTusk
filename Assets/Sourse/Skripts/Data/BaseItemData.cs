@@ -1,9 +1,12 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemData", menuName = "CreateItem", order = 51)]
-public class BaseItemData : ScriptableObject
+namespace Assets.Scripts.DataScripts
 {
-    [SerializeField] private string _name;
+    [CreateAssetMenu(fileName = "ItemData", menuName = "CreateItem", order = 51)]
+    public class BaseItemData : ScriptableObject
+    {
+        [SerializeField] private string _name;
 
-    public string Name => _name;
+        public string Name => _name;
+    }
 }

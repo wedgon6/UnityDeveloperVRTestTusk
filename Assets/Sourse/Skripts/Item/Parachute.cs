@@ -1,6 +1,9 @@
-public class Parachute : Item
+namespace Assets.Scripts.Items
 {
-    public Parachute(string name) : base(name)
+    public class Parachute : Item
     {
+        public Parachute(string name) : base(name)
+        {
+        }
     }
 }
