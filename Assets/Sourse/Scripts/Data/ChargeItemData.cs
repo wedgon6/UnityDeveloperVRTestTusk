@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Assets.Scripts.DataScripts
 {
-    [CreateAssetMenu(fileName = "RocketPackData", menuName = "CreateItem/RocketPack", order = 51)]
-    public class RocketPackData : BaseItemData
+    [CreateAssetMenu(fileName = "ChargeItemData", menuName = "CreateItem/RocketPack", order = 51)]
+    public class ChargeItemData : BaseItemData
     {
         [SerializeField] private int _charges;
 

@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerData: {fileID: 11400000, guid: 7f8733c66438cd943807ed6e27a8314d, type: 2}
-  _parachuteData: {fileID: 11400000, guid: b48a212ef4ebb2f49afda03ea3831b23, type: 2}
+  _parachuteData: {fileID: 11400000, guid: cdd15bba8b9650c408b47d79a81c8048, type: 2}
   _rocketPackData: {fileID: 11400000, guid: e41898781d08de94693ad1ddfa31065c, type: 2}
 --- !u!114 &1975901870
 MonoBehaviour:

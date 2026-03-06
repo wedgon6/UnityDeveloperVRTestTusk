@@ -12,7 +12,7 @@ namespace Assets.Scripts.Items
         public void AddItem(Item item)
         {
             _items.Add(item);
-            Debug.Log($"Кол-во предметов{_items.Count}. Добавен {item.Name}");
+            Debug.Log($"РљРѕР»-РІРѕ РїСЂРµРґРјРµС‚РѕРІ{_items.Count}. Р”РѕР±Р°РІРµРЅ {item.Name}");
         }
     }
 }

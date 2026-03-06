@@ -9,8 +9,8 @@ namespace Assets.Scripts.UtilityScripts
     public class EntryPoint : MonoBehaviour
     {
         [SerializeField] private PlayerData _playerData;
-        [SerializeField] private ParachuteData _parachuteData;
-        [SerializeField] private RocketPackData _rocketPackData;
+        [SerializeField] private BaseItemData _parachuteData;
+        [SerializeField] private ChargeItemData _rocketPackData;
 
         [Inject]
         private IPlayer _player;
